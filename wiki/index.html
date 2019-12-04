@@ -629,6 +629,8 @@ Error message and password prompt
 
 <li>GettingThingsDone</li>
 
+<li>Goals &amp; Timeline</li>
+
 <li>GoodThemes</li>
 
 <li>Graph Building</li>
@@ -750,8 +752,6 @@ Error message and password prompt
 <li>Testing</li>
 
 <li>Think of realistic plan</li>
-
-<li>Timeline &amp; Priorities</li>
 
 <li>Tipsie</li>
 
@@ -10944,7 +10944,7 @@ Error message and password prompt
 <div bag="default" created="20191029201510280" creator="D" modified="20191029201525831" modifier="Dani Murnane" revision="1" title="$:/status/UserName">
 <pre>Dan Murnane</pre>
 </div>
-<div created="20191204181506964" creator="Dan Murnane" list="Dashboard [[Track Hunter]] [[Timeline &amp; Priorities]] [[Make timeline and priorities]] [[Switch to cheaper hosting]] [[Follow up Domain charges]] [[No Next Action]]" modified="20191204182352034" modifier="Dan Murnane" title="$:/StoryList">
+<div created="20191204181506964" creator="Dan Murnane" list="Dashboard [[Goals &amp; Timeline]] [[Make timeline and priorities]] [[Switch to cheaper hosting]] [[Follow up Domain charges]] [[No Next Action]]" modified="20191204182352034" modifier="Dan Murnane" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191106165139469" creator="Dan Murnane" list="$:/core/ui/Buttons/home $:/plugins/gsd5/core/ui/buttons/dashboard-button $:/core/ui/Buttons/close-all $:/core/ui/Buttons/permaview $:/plugins/gsd5/core/ui/buttons/add-action-button $:/plugins/gsd5/core/ui/buttons/add-project-button $:/core/ui/Buttons/new-tiddler $:/core/ui/Buttons/new-journal $:/core/ui/Buttons/import $:/core/ui/Buttons/export-page $:/core/ui/Buttons/control-panel $:/core/ui/Buttons/advanced-search $:/core/ui/Buttons/tag-manager $:/core/ui/Buttons/language $:/core/ui/Buttons/theme $:/core/ui/Buttons/storyview $:/core/ui/Buttons/encryption $:/core/ui/Buttons/full-screen $:/core/ui/Buttons/save-wiki $:/core/ui/Buttons/refresh $:/core/ui/Buttons/more-page-actions $:/core/ui/Buttons/fold-all $:/core/ui/Buttons/manager $:/core/ui/Buttons/new-image $:/core/ui/Buttons/palette $:/core/ui/Buttons/print $:/core/ui/Buttons/timestamp $:/core/ui/Buttons/unfold-all" modified="20191106165139469" modifier="Dan Murnane" title="$:/tags/PageControls">
@@ -12059,6 +12059,65 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 For the sake of controlling variables, this will be tested in a different wiki. You can view it at [[GTD Wiki|https://murnanedaniel.github.io/GTDWiki/wiki/index.html]]. </pre>
 </div>
+<div created="20191204182352032" creator="Dan Murnane" gsd_project="Track Hunter" gsd_realm="Research" gsd_type="reference" modified="20191204190853388" modifier="Dan Murnane" title="Goals &amp; Timeline">
+<pre>! GNN Track Hunter
+
+Here I detail the overarching timeline and order of attack for the GNN tracking project.
+
+!! Goals
+
+* ''Sandbox'' 
+Have a notebook that can generate any combination of convolutions, and predictions, in order to be able to grid scan the configurations
+
+* ''Testbed''
+Have an easily accessible database of tests run, that is automatically integrated with the running process. Tabulated with all (hyper-)parameters
+
+* ''2-classifier'' 
+Discover an ideal architecture for doublet classification
+
+* ''3-classifier''
+Improve complexity, pipeline and accuracy of triplet classifier
+
+* ''N-classifier''
+Have a procedure that classifies a whole track, without complexity increasing combinatorically
+
+* ''Track parameter regression'' 
+Discover an ideal architecture for track parameter (node-based) regression
+
+* ''Track hunter'' 
+Given a graph, list all the tracks and their parameters (i.e. classify number of tracks, then regress that number of track parameter sets), in an order-agnostic way
+
+* ''Graph building''
+Discover an ideal approach to building a hit graph
+
+* ''Generative models''
+For simulation, look at graph generation models. Also could be used for training a discriminator to differentiate real from fake tracks
+
+!! Timeline
+
+This timeline does not reflect an order of priorities, per se. Only that certain technical obstacles must be overcome before others. E.g. It would be best to have a functioning testbed before grid-scanning on the sandbox, or it would be useful to have node-scale parameter regression before attempting graph-scale track parameter regression.
+
+# Sandbox can create basic sketch file
+# Sandbox can run network from any sketch file
+# Sandbox can create advanced sketch file
+# Testbed can read and write to .test database
+# Testbed integrates with sandbox
+# Testbed integrates with production
+# Sandbox can integrate with production
+# Create sandbox-production-testbed optimisation flow (based on genetics?)
+# Node parameter regression can predict pT
+# Node parameter regression can predict all params
+# Track counter regression (even linear)
+# Solve track hunter ordering problem
+# Grid scan track hunter architecture
+# Grid-scan 2-classifier architecture
+# Integrate 2+3-classifier
+# Grid-scan 3-classifier
+# Create low-complexity N-classifier
+# Grid-scan graph building architecture
+# Create generative architecture
+# Grid-scan generative architecture</pre>
+</div>
 <div created="20191031181126125" creator="Dan Murnane" modified="20191031182906992" modifier="Dan Murnane" tags="" title="GoodThemes" type="text/vnd.tiddlywiki">
 <pre>A short list of themes that I may use in the future.
 
@@ -12292,9 +12351,6 @@ For the sake of controlling variables, this will be tested in a different wiki. 
 * Make modular notebook as Sandbox. Ideal notebook?</pre>
 </div>
 <div created="20191106170823754" creator="Dan Murnane" gsd_complete="false" gsd_contact="" gsd_project="Year of Learning" gsd_realm="Outreach" gsd_status="next" gsd_type="action" modified="20191106170833826" modifier="Dan Murnane" title="Think of realistic plan">
-<pre></pre>
-</div>
-<div created="20191204182352032" creator="Dan Murnane" gsd_project="Track Hunter" gsd_realm="Research" gsd_type="reference" modified="20191204182352032" modifier="Dan Murnane" title="Timeline &amp; Priorities">
 <pre></pre>
 </div>
 <div created="20191106165407913" creator="Dan Murnane" gsd_complete="false" gsd_contact="" gsd_project="" gsd_realm="Business" gsd_status="active" gsd_type="project" modified="20191106165407913" modifier="Dan Murnane" title="Tipsie">
